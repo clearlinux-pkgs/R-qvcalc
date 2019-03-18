@@ -4,13 +4,12 @@
 #
 Name     : R-qvcalc
 Version  : 0.9.1
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/qvcalc_0.9-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/qvcalc_0.9-1.tar.gz
 Summary  : Quasi Variances for Factor Effects in Statistical Models
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
-Requires: R-psychotools
 BuildRequires : R-psychotools
 BuildRequires : buildreq-R
 
@@ -25,10 +24,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552871509
+export SOURCE_DATE_EPOCH=1552886705
 
 %install
-export SOURCE_DATE_EPOCH=1552871509
+export SOURCE_DATE_EPOCH=1552886705
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

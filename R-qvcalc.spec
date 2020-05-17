@@ -4,7 +4,7 @@
 #
 Name     : R-qvcalc
 Version  : 1.0.2
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/qvcalc_1.0.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/qvcalc_1.0.2.tar.gz
 Summary  : Quasi Variances for Factor Effects in Statistical Models
@@ -19,21 +19,22 @@ No detailed description available
 
 %prep
 %setup -q -c -n qvcalc
+cd %{_builddir}/qvcalc
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581994858
+export SOURCE_DATE_EPOCH=1589750877
 
 %install
-export SOURCE_DATE_EPOCH=1581994858
+export SOURCE_DATE_EPOCH=1589750877
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

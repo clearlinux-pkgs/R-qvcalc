@@ -4,7 +4,7 @@
 #
 Name     : R-qvcalc
 Version  : 1.0.2
-Release  : 34
+Release  : 35
 URL      : https://cran.r-project.org/src/contrib/qvcalc_1.0.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/qvcalc_1.0.2.tar.gz
 Summary  : Quasi Variances for Factor Effects in Statistical Models
